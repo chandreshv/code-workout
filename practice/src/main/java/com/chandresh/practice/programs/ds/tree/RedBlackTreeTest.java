@@ -110,6 +110,7 @@ public class RedBlackTreeTest {
 		rbt.insert(36);
 		rbt.insert(20);
 		rbt.insert(10);
+		rbt.insert(10);
 		rbt.insert(25);
 		rbt.insert(60);
 		rbt.insert(50);
