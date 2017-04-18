@@ -3,7 +3,7 @@ package com.chandresh.practice.programs.ds.tree;
 public class MedianCalculator {
 
 	
-	public double findMedian(int[] nums1, int[] nums2){
+	public double findMedian(int[] nums1, int[] nums2){ 
 		if((nums1==null || nums1.length==0) &&
 				(nums2==null || nums2.length==0))
 			return -1;
