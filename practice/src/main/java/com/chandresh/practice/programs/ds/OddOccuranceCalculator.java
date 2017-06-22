@@ -2,7 +2,7 @@ package com.chandresh.practice.programs.ds;
 
 public class OddOccuranceCalculator {
 
-	public int[] findOddOccurance(int[] inp) { 
+	public int[] findOddOccurance(int[] inp) {  
 		int result[] = new int[2];
 
 		if (inp == null || inp.length == 0)

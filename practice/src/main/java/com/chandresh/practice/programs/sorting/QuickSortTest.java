@@ -38,7 +38,7 @@ class QuickSort<T>{
 	public void sort(Comparable<T>[] inp) {
 		if(inp==null || inp.length<2)
 			return;
-		shuffle(inp);
+		//shuffle(inp);
 		sort(inp,0,inp.length-1);
 		
 	}
@@ -107,9 +107,9 @@ class QuickSort<T>{
 public class QuickSortTest {
 	
 	public static void main(String[] args){
-		Integer[] arrInt = {2,5,8,3,6,10, 19, 43,1, 39};
+		Integer[] arrInt = {1,9};
 		String[] arrString = {"A","V","R","B","H","C","T","G"};
-		Integer[] dupArrInt = {9,1,9,6};
+		Integer[] dupArrInt = {1,9};
 		String[] dupArrString = {"A","V","R","A","G","B","H","C","T","G"};
 		
 		Comparable<Integer>[] inp1 = arrInt;
@@ -118,12 +118,12 @@ public class QuickSortTest {
 		QuickSort<Integer> obj1 = new QuickSort<Integer>();
 		QuickSort<String> obj2 = new QuickSort<String>();
 		obj1.sort(inp1);
-		obj2.sort(inp2);
-		obj1.sortDuplicateValues(dupArrInt);
-		obj2.sortDuplicateValues(dupArrString);
+		//obj2.sort(inp2);
+		//obj1.sortDuplicateValues(dupArrInt);
+		//obj2.sortDuplicateValues(dupArrString);
 		
-		obj1.display(dupArrInt);
-		obj2.display(dupArrString);
+		obj1.display(arrInt);
+		//obj2.display(dupArrString);
 	}
 
 }

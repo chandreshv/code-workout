@@ -4,7 +4,7 @@ public class LongestPalindrome {
 
 	
 	public static void main(String args[]){
-		String inp = "gaoaoaoa";
+		String inp = "gaa";
 		
 		System.out.println(findLongestPalindrome(inp));
 	}
@@ -37,6 +37,10 @@ public class LongestPalindrome {
 					tempEnd=-1;
 					k--;
 				}
+			}
+			if(tempStart!=-1 && tempEnd!=-1 && (tempEnd-tempStart>end-start)){
+				start=tempStart;
+				end=tempEnd;
 			}
 		}
 		
